@@ -2,12 +2,14 @@ package oop
 
 import "fmt"
 
-// 封装特性
-
 type Animal struct {
 	Name string
 }
 
-func (a *Animal) eat() {
+func (a *Animal) Eat() {
 	fmt.Printf("%s eat...\n", a.Name)
+}
+
+func (a *Animal) Hi() {
+	fmt.Printf("%s say hi\n", a.Name)
 }
